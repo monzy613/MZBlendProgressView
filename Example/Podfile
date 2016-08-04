@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'MZBlendProgressView_Example' do
+  pod 'MZBlendProgressView', :path => '../'
+
+  target 'MZBlendProgressView_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
