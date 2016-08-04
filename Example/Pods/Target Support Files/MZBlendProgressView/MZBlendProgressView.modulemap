@@ -1,0 +1,6 @@
+framework module MZBlendProgressView {
+  umbrella header "MZBlendProgressView-umbrella.h"
+
+  export *
+  module * { export * }
+}

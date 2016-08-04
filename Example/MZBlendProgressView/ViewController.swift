@@ -7,18 +7,25 @@
 //
 
 import UIKit
+import MZBlendProgressView
 
 class ViewController: UIViewController {
 
+    lazy var blendProgressView: MZBlendProgressView = {
+        let progressView = MZBlendProgressView(frame: CGRect(x: 0, y: 0, width: 200.0, height: 30.0))
+        progressView.center = self.view.center
+        progressView.backgroundColor = .red
+        progressView.progressLayer.strokeColor = UIColor.black.cgColor
+        return progressView
+    }()
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        view.addSubview(blendProgressView)
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    @IBAction func sliderSlided(_ sender: UISlider) {
+        blendProgressView.updateProgress(CGFloat(sender.value))
     }
-
 }
 

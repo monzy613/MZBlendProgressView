@@ -1,0 +1,16 @@
+PODS:
+  - MZBlendProgressView (0.1.0)
+
+DEPENDENCIES:
+  - MZBlendProgressView (from `../`)
+
+EXTERNAL SOURCES:
+  MZBlendProgressView:
+    :path: ../
+
+SPEC CHECKSUMS:
+  MZBlendProgressView: 7fa1d6ce82b52c72dafcb09534d246dbf737aa43
+
+PODFILE CHECKSUM: 55ad65bc67faddbadc2d6fbf55389ba62a672ac2
+
+COCOAPODS: 1.0.1

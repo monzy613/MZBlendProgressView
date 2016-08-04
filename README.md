@@ -6,6 +6,17 @@
 [![Platform](https://img.shields.io/cocoapods/p/MZBlendProgressView.svg?style=flat)](http://cocoapods.org/pods/MZBlendProgressView)
 
 ## Example
+```swift
+let progressView = MZBlendProgressView(frame: CGRect(x: 0, y: 0, width: 200.0, height: 30.0))
+progressView.center = self.view.center
+progressView.backgroundColor = .red
+progressView.progressLayer.strokeColor = UIColor.black.cgColor
+
+progressView.updateProgress(CGFloat(sender.value))
+```
+
+## SnapShot
+![img](http://o7b20it1b.bkt.clouddn.com/blendProgressView.png)
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
